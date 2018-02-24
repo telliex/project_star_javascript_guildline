@@ -83,6 +83,18 @@ const MAX_PEOPLE_SIZE = 10;
 ```
 
 3 编码细节
+3.1 赋值，定义，返回值，方法调用后强制需要加分号
+3.2 定义变量时，不使用逗号
+3.3 objectMap 最后一个属性不带逗号
+```
+// bad code
+let arr = [],str = "",obj = {a:1,b:2,};
+
+// good code
+let arr = [];
+let str = "";
+let obj = {a:1,b:2};
+```
 
 
 
