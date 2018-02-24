@@ -1,4 +1,4 @@
-1.6 下面类型的对象不建议用new构造：new Number, new String, new Boolean, new Object(用{}代替), new Array(用[]代替)
+
 
 
 3 编码细节

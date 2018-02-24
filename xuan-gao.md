@@ -6,7 +6,6 @@ MyGlobalVariable
 // good code
 let myGlobalVariable;
 const yourGlobalVariable;
-
 ```
 
 ### 1.2 变量在函数内部或循环控制条件之前提前声明
