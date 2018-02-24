@@ -26,3 +26,38 @@ const superman = {
   hidden: true,
 };
 ```
+
+### 使用对象方法的简写
+```
+// bad code
+const atom = {
+  value: 1,
+  addValue: function (value) {
+    return atom.value + value;
+  },
+};
+
+// good code
+const atom = {
+  value: 1,
+  addValue(value) {
+    return atom.value + value;
+  },
+};
+```
+
+### 使用对象属性值的简写
+```
+const lukeSkywalker = 'Luke Skywalker';
+
+// bad code
+const obj = {
+    lukeSkywalker: lukeSkywalker,
+};
+
+// good code
+const obj = {
+    lukeSkywalker,
+};
+```
+
