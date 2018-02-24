@@ -103,16 +103,7 @@ export default makeStyleGuide;
 ```
 
 
-### 1.7 布尔值开头带 is,has,can
-```
-// bad code
-let readYet = false;
-
-// good code
-let isRead = false;
-```
-
-### 1.8 构造器首字母大写，方法变量需要遵循小驼峰式命名规则
+### 1.7 构造器首字母大写，方法变量需要遵循小驼峰式命名规则
 ```
 // bad code
 function slidepage(){};
@@ -123,7 +114,7 @@ function SlidePage(){};
 SlidePage.prototype.resizePage = function(){};
 ```
 
-### 1.9 常量名全部大写，单词间用下划线分隔。如：“CSS_BTN_CLOSE”, "TXT_LOADING"
+### 1.8 常量名全部大写，单词间用下划线分隔。如：“CSS_BTN_CLOSE”, "TXT_LOADING"
 ```
 // bad code
 const maxpeoplesize = 10;
@@ -131,6 +122,16 @@ const maxpeoplesize = 10;
 // good code
 const MAX_PEOPLE_SIZE = 10;
 ```
+
+### 1.10 特殊命名规范
+
+1. 前面加 "is" 的变量名 应该 为布尔值，同理可以为 "has", "can" 或者 "should"。
+2. 术语 "compute" 作为变量名应为已经计算完成的变量。
+3. 术语 "find" 作为变量名应为已经查找完成的变量。
+4. 术语 "initialize" 或者 "init" 作为变量名应为已经实例化（初始化）完成的类或者其他类型的变量。
+5. 带有 "num" 或者 "count" 开头的变量名约定为数字（对象）。
+6. 重复变量建议使用 "i", "j", "k" （依次类推）等名称的变量。
+7. 补充用语必须使用补充词，例如： get/set, add/remove, create/destroy, start/stop, insert/delete, begin/end, etc.
 
 
 

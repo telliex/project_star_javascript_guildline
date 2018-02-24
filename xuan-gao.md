@@ -5,6 +5,8 @@ MyGlobalVariable
 
 // good code
 let myGlobalVariable;
+const yourGlobalVariable;
+
 ```
 
 ### 1.2 变量在函数内部或循环控制条件之前提前声明
@@ -27,4 +29,4 @@ let len=list.length;
 }
 ```
 
-
+### 1.3 变量必须在声明初始化以后才能使用，即便是 NULL 类型。
