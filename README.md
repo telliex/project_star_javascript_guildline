@@ -135,6 +135,56 @@ let isDisplay = $("#id").hasClass("hide");
 if(isRead || hasDiv || isDisplay){}
 ```
 
+7.4 判断中禁止使用yoda表达式
+```
+// bad code
+if (5 == n) {
+    // do something...
+}
+
+// good code
+if (n == 5) {
+    // do something...
+
+}
+```
+
+7.5 判断使用严格类型判断 0，null，undefined ，固定字符 使用 ===
+
+8 字符串
+```
+// bad code
+var str = "<div><span><a href="#">myhref</a></span></div>";
+
+// good code
+//使用反单引号
+`<div>
+    <span>
+        <a href="#">myhref</a>
+    </span>
+</div>`
+```
+
+9 原型
+9.1 禁止对顶级对象进行原型修改，必要时请以 addMethod 方法加入
+
+```
+// bad code
+Function.prototype.cutHtml = function(){};
+
+// good code
+Function.prototype.addMethod=function(name,fn){
+    this.prototype[name]=fn
+};
+let Methods=function(){};
+Methods.addMethod('cutHtml',function(){
+    //do something...
+});
+
+```
+
+
+
 
 
 
