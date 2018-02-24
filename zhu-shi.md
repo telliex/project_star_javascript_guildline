@@ -24,3 +24,7 @@ function(){
     // returns:  Look, a Bananarama tape!
 }
 ```
+### 10.4 简单的类型的参数可以直接在函数参数定义中注释说明。 
+```
+function(/*String*/ foo, /*int*/ bar)...
+```  
