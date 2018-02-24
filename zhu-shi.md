@@ -28,3 +28,15 @@ function(){
 ```
 function(/*String*/ foo, /*int*/ bar)...
 ```  
+
+### 10.5 返回值
+函数可以同时返回多个不同（类型）的值，所以应每个返回值之后加入返回类型的注释。注释在行内注释即可，如果所有的返回值为同一类型，则指明返回的类型；如为多个不同的返回值，则标注返回类型为"mixed"。
+```
+function() {
+ if (arguments.length) {
+  return "You passed argument(s)"; // String
+ } else {
+        return false; // Boolean
+    }
+}
+```
