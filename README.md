@@ -120,6 +120,22 @@ function myTestFunc(params){
 6.2 循环一致使用递增
 6.3 循环内不允许定义函数和变量
 
+7 逻辑控制
+7.1 控制条件内不要使用定义变量
+7.2 分支超过5种的判断使用 switch case，switch case 需要带 default
+7.3 判断条件过长，使用变量标识
+```
+// bad code
+if( flag === 0 || $(".div").length > 0 || $("#id").hasClass("hide")){}
+
+// good code
+let isRead = (flag === 0);
+let hasDiv = $(".div").length > 0;
+let isDisplay = $("#id").hasClass("hide");
+if(isRead || hasDiv || isDisplay){}
+```
+
+
 
 
 
