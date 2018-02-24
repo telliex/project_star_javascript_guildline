@@ -29,11 +29,21 @@ let myGlobalVariable;
 // bad code
 
 function test(){
-    for(var i=0;list.length;i++){
+    for(var i=0;i<list.length;i++){
         var item=list[i];
     }
 }
 
 // good code
+
+function test(){
+let i;
+let item;
+let len=list.length;
+    for(i=0;i<len;i++){
+        item=list[i];
+    }
+}
+
 
 ```
