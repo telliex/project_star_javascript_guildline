@@ -111,8 +111,14 @@ function myTestFunc(params){
     let b = params.b;
 }
 ```
+5 debug
+5.1 允许使用try/catch
+5.2 上线代码不允许使用debugger，console，alert等调试异常的关键字
 
-
+6 循环
+6.1 循环使用for，不在非必要条件下不使用while
+6.2 循环一致使用递增
+6.3 循环内不允许定义函数和变量
 
 
 
