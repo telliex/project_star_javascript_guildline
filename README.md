@@ -73,7 +73,7 @@
   insert_final_newline = true
   trim_trailing_whitespace = true
 ```
-参照文档并将这些配置信息添加到项目的.editorconfig文件中。更多信息请参考 [EditorConfig](http://editorconfig.org/) 。
+参照文档并将这些配置信息添加到项目的 `.editorconfig` 文件中。更多信息请参考 [EditorConfig](http://editorconfig.org/) 。
 
 
 此为 javascript guideline，更多如 HTML、CSS guildline 可参考[Web前端代码风格指南](https://dondevi.github.io/web-frontend-guide/style-guide/codestyle.html)

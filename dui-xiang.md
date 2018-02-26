@@ -3,11 +3,12 @@
 ```
 // bad code
 const item = new Object();
+const items = new Array();
 
 // good code
 const item = {};
+const items = [];
 ```
-
 
 ### 不要使用new命令，改用Object.create()命令。
 
@@ -60,4 +61,88 @@ const obj = {
     lukeSkywalker,
 };
 ```
+### 向数组添加元素时使用 Arrary#push 替代直接赋值。
+```
+
+// bad code
+someStack[someStack.length] = 'abracadabra';
+
+// good code
+someStack.push('abracadabra');
+```
+### 使用拓展运算符 ... 复制数组。
+```
+// bad code
+const len = items.length;
+const itemsCopy = [];
+let i;
+
+for (i = 0; i < len; i++) {
+  itemsCopy[i] = items[i];
+}
+
+// good code
+const itemsCopy = [...items];
+
+```
+
+### 解構：使用解构存取和使用多属性对象。
+```
+// bad code
+function getFullName(user) {
+    const firstName = user.firstName;
+    const lastName = user.lastName;
+
+    return `${firstName} ${lastName}`;
+}
+
+// good code
+function getFullName(obj) {
+    const { firstName, lastName } = obj;
+    return `${firstName} ${lastName}`;
+}
+
+// best code
+function getFullName({ firstName, lastName }) {
+    return `${firstName} ${lastName}`;
+}
+
+```
+
+### 解構：对数组使用解构赋值。
+```
+const arr = [1, 2, 3, 4];
+
+// bad code
+const first = arr[0];
+const second = arr[1];
+
+// good code
+const [first, second] = arr;
+```
+
+### 解構：需要回传多个值时，使用对象解构，而不是数组解构。
+```
+// bad code
+function processInput(input) {
+    // then a miracle occurs
+    return [left, right, top, bottom];
+}
+
+// 调用时需要考虑回调数据的顺序。
+const [left, __, top] = processInput(input);
+
+// good code
+function processInput(input) {
+    // then a miracle occurs
+    return { left, right, top, bottom };
+}
+
+// 调用时只选择需要的数据
+const { left, right } = processInput(input);
+
+```
+
+
+
 
