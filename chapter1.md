@@ -133,7 +133,7 @@ const MAX_PEOPLE_SIZE = 10;
 6. 重复变量建议使用 "i", "j", "k" （依次类推）等名称的变量。
 7. 补充用语必须使用补充词，例如： get/set, add/remove, create/destroy, start/stop, insert/delete, begin/end, etc.
 
-### 1.10 避免使用全局变量；如果不得不使用，请加入g前缀
+### 2.10 避免使用全局变量；如果不得不使用，请加入g前缀
 ```
 // bad code
 const number = 10;

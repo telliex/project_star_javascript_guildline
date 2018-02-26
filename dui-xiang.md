@@ -1,4 +1,4 @@
-### 使用字面值创建对象，下面类型的对象不建议用new构造：new Number, new String, new Boolean, new Object(用{}代替), new Array(用[]代替)
+### 3.1 使用字面值创建对象，下面类型的对象不建议用new构造：new Number, new String, new Boolean, new Object(用{}代替), new Array(用[]代替)
 
 ```
 // bad code
@@ -10,10 +10,10 @@ const item = {};
 const items = [];
 ```
 
-### 不要使用new命令，改用Object.create()命令。
+### 3.2 不要使用new命令，改用Object.create()命令。
 
 
-### 如果你的代码在浏览器环境下执行，别使用 保留字 作为键值。这样的话在 IE8 不会运行。 但在 ES6 模块和服务器端中使用没有问题。
+### 3.3 如果你的代码在浏览器环境下执行，别使用 保留字 作为键值。这样的话在 IE8 不会运行。 但在 ES6 模块和服务器端中使用没有问题。
 ```
 // bad code
 const superman = {
