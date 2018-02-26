@@ -1,3 +1,18 @@
+### 4.1 函数内部不允许嵌套函数
+### 4.2 函数内部不允许使用arguments.callee和arguments.caller
+### 4.3 函数参数不得超过5个 （多于5个使用objectType代替）
+```
+// bad code
+function myTestFunc(a,b,c,d,e,f,g,h){};
+
+// good code
+function myTestFunc(params){
+    let a = params.a;
+    let b = params.b;
+}
+```
+
+
 ### 使用函数声明代替函数表达式。
 
 ### 不要在一个非函数代码块（if、while 等）中声明一个函数，把那个函数赋给一个变量。浏览器允许你这么做，但它们的解析表现不一致。

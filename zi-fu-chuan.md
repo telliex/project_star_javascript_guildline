@@ -1,4 +1,5 @@
 ### 字符串使用单引号 '' 。
+
 ### 字符串超过 80 个字节应该使用字符串连接号换行。
 ### 过度使用字串连接符号可能会对性能造成影响。
 ```
@@ -29,3 +30,18 @@ function sayHi(name) {
     return `How are you, ${name}?`;
 }
 ```
+### HTML 语法字串时，使用反单引号
+
+```
+// bad code
+var str = "<div><span><a href="#">myhref</a></span></div>";
+
+// good code
+//使用反单引号
+`<div>
+    <span>
+        <a href="#">myhref</a>
+    </span>
+</div>`
+```
+

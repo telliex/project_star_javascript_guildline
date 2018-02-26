@@ -7,6 +7,7 @@
 * [字符串](zi-fu-chuan.md)
 * [函数](han-shu.md)
 * [模块](mo-kuai.md)
-* [function](function.md)
+* [编码](function.md)
 * [注解](zhu-shi.md)
+* [除错](chu-cuo.md)
 

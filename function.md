@@ -1,10 +1,31 @@
+### 使用简写
+```
+// bad
+if (name !== '') {
+  // ...stuff...
+}
 
+// good
+if (name) {
+  // ...stuff...
+}
 
+// bad
+if (collection.length > 0) {
+  // ...stuff...
+}
 
-3 编码细节
-3.1 赋值，定义，返回值，方法调用后强制需要加分号，除了for, function, if, switch, try, while
-3.2 定义变量时，不使用逗号
-3.3 objectMap 最后一个属性不带逗号
+// good
+if (collection.length) {
+  // ...stuff...
+}
+```
+
+### 3.1 赋值，定义，返回值，方法调用后强制需要加分号，除了for, function, if, switch, try, while
+
+### 定义变量时，不使用逗号
+
+### 3.3 objectMap 最后一个属性不带逗号
 ```
 // bad code
 let arr = [],str = "",obj = {a:1,b:2,};
@@ -15,30 +36,12 @@ let str = "";
 let obj = {a:1,b:2};
 ```
 
-4 函数
 
-4.1 函数内部不允许嵌套函数
-4.2 函数内部不允许使用arguments.callee和arguments.caller
-4.3 函数参数不得超过5个 （多于5个使用objectType代替）
-```
-// bad code
-function myTestFunc(a,b,c,d,e,f,g,h){};
 
-// good code
-function myTestFunc(params){
-    let a = params.a;
-    let b = params.b;
-}
-```
-5 debug
-5.1 允许使用try/catch
-5.2 上线代码不允许使用debugger，console，alert等调试异常的关键字
-
-6 循环
-6.1 循环使用for，不在非必要条件下不使用while
-6.2 循环一致使用递增
-6.3 循环内不允许定义函数和变量
-6.4 所有的循环体和判断体都需要用"{}"括起来。
+### 6.1 循环使用for，不在非必要条件下不使用while
+### 6.2 循环一致使用递增
+### 6.3 循环内不允许定义函数和变量
+### 6.4 所有的循环体和判断体都需要用"{}"括起来。
 ```
 // bad code
 if (condition)
@@ -49,13 +52,13 @@ if (condition) {
     statement;
 }
 ```
-6.5 for-in循环体中必须用 hasOwnProperty 方法检查成员是否为自身成员。避免来自原型链上的污染。
+### 6.5 for-in循环体中必须用 hasOwnProperty 方法检查成员是否为自身成员。避免来自原型链上的污染。
 
 
-7 逻辑控制
-7.1 控制条件内不要使用定义变量
-7.2 分支超过5种的判断使用 switch case，switch case 需要带 default
-7.3 判断条件过长，使用变量标识
+
+### 7.1 控制条件内不要使用定义变量
+### 7.2 分支超过5种的判断使用 switch case，switch case 需要带 default
+### 7.3 判断条件过长，使用变量标识
 ```
 // bad code
 if( flag === 0 || $(".div").length > 0 || $("#id").hasClass("hide")){}
@@ -67,7 +70,7 @@ let isDisplay = $("#id").hasClass("hide");
 if(isRead || hasDiv || isDisplay){}
 ```
 
-7.4 判断中禁止使用yoda表达式
+### 7.4 判断中禁止使用yoda表达式
 ```
 // bad code
 if (5 == n) {
@@ -81,21 +84,9 @@ if (n == 5) {
 }
 ```
 
-7.5 判断使用严格类型判断 0，null，undefined ，固定字符 用===代替==，用!==代替!=。
+### 7.5 判断使用严格类型判断 0，null，undefined ，固定字符 用===代替==，用!==代替!=。
 
-8 字符串
-```
-// bad code
-var str = "<div><span><a href="#">myhref</a></span></div>";
 
-// good code
-//使用反单引号
-`<div>
-    <span>
-        <a href="#">myhref</a>
-    </span>
-</div>`
-```
 
 9 原型
 9.1 禁止对顶级对象进行原型修改，必要时请以 addMethod 方法加入
