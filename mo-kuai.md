@@ -12,6 +12,7 @@ export default AirbnbStyleGuide.es6;
 import { es6 } from './AirbnbStyleGuide';
 export default es6;
 ```
+
 ### 不要使用通配符 import
 ```
 // bad code
@@ -20,6 +21,7 @@ import * as AirbnbStyleGuide from './AirbnbStyleGuide';
 // good code
 import AirbnbStyleGuide from './AirbnbStyleGuide';
 ```
+
 ### 让 import 和 export 各司其职让事情能保持一致，不要从 import 中直接 export。
 ```
 // bad code
