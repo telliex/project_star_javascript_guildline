@@ -28,7 +28,7 @@ const superman = {
 };
 ```
 
-### 使用对象方法的简写
+### 3.4 使用对象方法的简写
 ```
 // bad code
 const atom = {
