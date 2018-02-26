@@ -6,8 +6,7 @@
 * [命名](chapter1.md)
 * [字符串](zi-fu-chuan.md)
 * [函数](han-shu.md)
+* [模块](mo-kuai.md)
 * [function](function.md)
 * [注解](zhu-shi.md)
-* [参考](reference.md)
-* [模块](mo-kuai.md)
 

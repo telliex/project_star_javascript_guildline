@@ -29,3 +29,25 @@ let len=list.length;
 ```
 
 ### 1.3 变量必须在声明初始化以后才能使用，即便是 NULL 类型。
+
+### 将所有的 const 和 let 分组
+```
+// bad code
+let i, len, dragonball,
+      items = getItems(),
+      goSportsTeam = true;
+
+// bad code
+let i;
+const items = getItems();
+let dragonball;
+const goSportsTeam = true;
+let len;
+
+// good code
+const goSportsTeam = true;
+const items = getItems();
+let dragonball;
+let i;
+let length
+```
