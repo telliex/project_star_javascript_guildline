@@ -10,4 +10,5 @@
 * [编码](function.md)
 * [注解](zhu-shi.md)
 * [除错](chu-cuo.md)
+* [jquery](jquery.md)
 
