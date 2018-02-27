@@ -47,7 +47,7 @@ const atom = {
 };
 ```
 
-### 使用对象属性值的简写
+### 3.5 使用对象属性值的简写
 ```
 const lukeSkywalker = 'Luke Skywalker';
 
@@ -61,7 +61,7 @@ const obj = {
     lukeSkywalker,
 };
 ```
-### 向数组添加元素时使用 Arrary#push 替代直接赋值。
+### 3.6 向数组添加元素时使用 Arrary#push 替代直接赋值。
 ```
 
 // bad code
@@ -70,7 +70,7 @@ someStack[someStack.length] = 'abracadabra';
 // good code
 someStack.push('abracadabra');
 ```
-### 使用拓展运算符 ... 复制数组。
+### 3.7 使用拓展运算符 ... 复制数组。
 ```
 // bad code
 const len = items.length;
@@ -86,7 +86,7 @@ const itemsCopy = [...items];
 
 ```
 
-### 解構：使用解构存取和使用多属性对象。
+### 3.8 解構：使用解构存取和使用多属性对象。
 ```
 // bad code
 function getFullName(user) {
@@ -109,7 +109,7 @@ function getFullName({ firstName, lastName }) {
 
 ```
 
-### 解構：对数组使用解构赋值。
+### 3.9 解構：对数组使用解构赋值。
 ```
 const arr = [1, 2, 3, 4];
 
@@ -121,7 +121,7 @@ const second = arr[1];
 const [first, second] = arr;
 ```
 
-### 解構：需要回传多个值时，使用对象解构，而不是数组解构。
+### 3.10 解構：需要回传多个值时，使用对象解构，而不是数组解构。
 ```
 // bad code
 function processInput(input) {

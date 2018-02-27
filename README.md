@@ -78,3 +78,12 @@
 
 此为 javascript guideline，更多如 HTML、CSS guildline 可参考[Web前端代码风格指南](https://dondevi.github.io/web-frontend-guide/style-guide/codestyle.html)
 
+
+
+12 面向对象
+12.1 统一使用构造器+原型方法进行面向对象方法开发，不使用拷贝继承
+
+13 格式化
+13.1 统一使用 js-beautify 和统一配置文件进行格式化
+13.3 语法与风格检查使用 jshint
+

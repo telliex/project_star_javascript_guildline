@@ -1,4 +1,4 @@
-### 使用 $ 作为存储 jQuery 对象的变量名前缀。
+### 10.1 使用 $ 作为存储 jQuery 对象的变量名前缀。
 ```
 // bad
 const sidebar = $('.sidebar');
@@ -7,7 +7,7 @@ const sidebar = $('.sidebar');
 const $sidebar = $('.sidebar');
 ```
 
-### 缓存 jQuery 查询。
+### 10.2 缓存 jQuery 查询。
 ```
 // bad
 function setSidebar() {
@@ -33,7 +33,7 @@ function setSidebar() {
 }
 ```
 
-### 对 DOM 查询使用层叠 $('.sidebar ul') 或 父元素 > 子元素 $('.sidebar > ul');对有作用域的 jQuery 对象查询使用 find。
+### 10.3 对 DOM 查询使用层叠 $('.sidebar ul') 或 父元素 > 子元素 $('.sidebar > ul');对有作用域的 jQuery 对象查询使用 find。
 ```
 // bad
 $('ul', '.sidebar').hide();
