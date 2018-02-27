@@ -21,7 +21,6 @@ SublimeLinter 是 SublimeText 的插件，它只是一个进行代码检查的�
 npm install -g jshint
 ```
 
-
 ### 设置.jshintrc
 在项目根目录新建一个文件：.jshintrc 。 api參考地址：[传送门](http://jshint.com/docs/options/)。
 ```
