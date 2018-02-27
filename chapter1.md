@@ -1,3 +1,4 @@
+##命名规则快速检视
 结构 | 规则
 ---- | ---
 模块 | mixedCase
@@ -12,7 +13,7 @@
 对象 | mixedCase
 实例 | mixedCase
 
-### 2.1 避免单字母命名。命名应具备描述性。
+### 2.1 避免单字母命名。命名应具备描述性
 ```
 // bad code
 function q() {
@@ -24,7 +25,8 @@ function query() {
   // ..stuff..
 }
 ```
-### 2.2 使用驼峰式命名对象、函数和实例。
+
+### 2.2 使用驼峰式命名对象、函数和实例
 ```
 // bad
 const OBJEcttsssss = {};
@@ -36,10 +38,9 @@ const thisIsMyObject = {};
 function thisIsMyFunction() {}
 ```
 
-### 2.3 使用帕斯卡式命名构造函数或类。
+### 2.3 使用帕斯卡式命名构造函数或类
 ```
 // bad code
-
 function user(options) {
   this.name = options.name;
 }
@@ -49,7 +50,6 @@ const bad = new user({
 });
 
 // good code
-
 class User {
   constructor(options) {
     this.name = options.name;
@@ -75,7 +75,7 @@ MyConstructor.prototype._private=_private;
 this._firstName = 'Panda';
 ```
 
-### 2.5 如果你的文件只输出一个类，那你的文件名必须和类名完全保持一致。
+### 2.5 如果你的文件只输出一个类，那你的文件名必须和类名完全保持一致
 ```
 // file contents
 class CheckBox {
@@ -94,7 +94,7 @@ import CheckBox from './check_box';
 import CheckBox from './CheckBox';
 ```
 
-### 2.6 当你导出默认的函数时使用驼峰式命名。你的文件名必须和函数名完全保持一致。
+### 2.6 当你导出默认的函数时使用驼峰式命名。你的文件名必须和函数名完全保持一致
 ```
 function makeStyleGuide() {
 }

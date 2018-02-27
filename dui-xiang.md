@@ -1,5 +1,4 @@
 ### 3.1 使用字面值创建对象，下面类型的对象不建议用new构造：new Number, new String, new Boolean, new Object(用{}代替), new Array(用[]代替)
-
 ```
 // bad code
 const item = new Object();
@@ -10,10 +9,9 @@ const item = {};
 const items = [];
 ```
 
-### 3.2 不要使用new命令，改用Object.create()命令。
+### 3.2 不要使用new命令，改用Object.create()命令
 
-
-### 3.3 如果你的代码在浏览器环境下执行，别使用 保留字 作为键值。这样的话在 IE8 不会运行。 但在 ES6 模块和服务器端中使用没有问题。
+### 3.3 如果你的代码在浏览器环境下执行，别使用 保留字 作为键值。这样的话在 IE8 不会运行。 但在 ES6 模块和服务器端中使用没有问题
 ```
 // bad code
 const superman = {
@@ -61,16 +59,17 @@ const obj = {
     lukeSkywalker,
 };
 ```
-### 3.6 向数组添加元素时使用 Arrary#push 替代直接赋值。
-```
 
+### 3.6 向数组添加元素时使用 Arrary#push 替代直接赋值
+```
 // bad code
 someStack[someStack.length] = 'abracadabra';
 
 // good code
 someStack.push('abracadabra');
 ```
-### 3.7 使用拓展运算符 ... 复制数组。
+
+### 3.7 使用拓展运算符 ... 复制数组
 ```
 // bad code
 const len = items.length;
@@ -83,10 +82,9 @@ for (i = 0; i < len; i++) {
 
 // good code
 const itemsCopy = [...items];
-
 ```
 
-### 3.8 解構：使用解构存取和使用多属性对象。
+### 3.8 解構：使用解构存取和使用多属性对象
 ```
 // bad code
 function getFullName(user) {
@@ -106,10 +104,9 @@ function getFullName(obj) {
 function getFullName({ firstName, lastName }) {
     return `${firstName} ${lastName}`;
 }
-
 ```
 
-### 3.9 解構：对数组使用解构赋值。
+### 3.9 解構：对数组使用解构赋值
 ```
 const arr = [1, 2, 3, 4];
 
@@ -121,7 +118,7 @@ const second = arr[1];
 const [first, second] = arr;
 ```
 
-### 3.10 解構：需要回传多个值时，使用对象解构，而不是数组解构。
+### 3.10 解構：需要回传多个值时，使用对象解构，而不是数组解构
 ```
 // bad code
 function processInput(input) {

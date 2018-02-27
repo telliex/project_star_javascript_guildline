@@ -1,4 +1,4 @@
-### 6.1 总是使用模组 (import/export) 而不是其他非标准模块系统。
+### 6.1 总是使用模组 (import/export) 而不是其他非标准模块系统
 ```
 // bad code
 const AirbnbStyleGuide = require('./AirbnbStyleGuide');
@@ -22,7 +22,7 @@ import * as AirbnbStyleGuide from './AirbnbStyleGuide';
 import AirbnbStyleGuide from './AirbnbStyleGuide';
 ```
 
-### 6.3 让 import 和 export 各司其职让事情能保持一致，不要从 import 中直接 export。
+### 6.3 让 import 和 export 各司其职让事情能保持一致，不要从 import 中直接 export
 ```
 // bad code
 // filename es6.js
@@ -35,7 +35,8 @@ export default es6;
 ```
 
 ### 6.4 一个模块只干一件事
-#### 6.4.1 Javascript代码应符合jshint检验标准我们正在编写属于自己特殊定制的jshint标准配置，所有通过提交的代码 （非三方包，自身业务逻辑）都需要通过jslint检查。
+
+#### 6.4.1 Javascript代码应符合jshint检验标准我们正在编写属于自己特殊定制的jshint标准配置，所有通过提交的代码 （非三方包，自身业务逻辑）都需要通过jslint检查
 
     * 在sublime下配置：[uipoet/sublime-jshint · GitHub](https://github.com/uipoet/sublime-jshint)
     * 在vim下配置：[Shutnik/jshint2.vim · GitHub](https://github.com/Shutnik/jshint2.vim)
