@@ -270,6 +270,41 @@ const hero = {
 };
 ```
 
+### 适当添加空行，增加代码的易读性
+
+```
+// bad code
+  if (condition) {
+    for (condition1; condition2; condition3) {
+      var foo = 0;
+      var bar = 1;
+      // a comment
+      if (condition) {
+        alert(foo);
+      } else {
+        alert(bar);
+      }
+    }
+  }
+
+// good code
+  if (condition) {
+
+    for (condition1; condition2; condition3) {
+      var foo = 0;
+      var bar = 1;
+
+      // a comment
+      if (condition) {
+        alert(foo);
+      } else {
+        alert(bar);
+      }
+    }
+  }
+```
+
+
 
 
 
