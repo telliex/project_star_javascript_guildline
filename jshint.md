@@ -2,7 +2,7 @@
 
 JSHint 是一個可以自動檢查 JavaScript 程式碼的工具，讓程式設計者在專案開發初期就可以即時修正潛在的錯誤。它可以在 JavaScript 程式設計初期，就自動偵測程式中可能潛在的問題，它會鉅細靡遺的告訴程式設計者所以有能出現問題的地方，像為定義的變數、陳述式結尾沒有加分號、變數沒有用 var 宣告、非數字的變數要用 === 或 !== 來判斷以避免自動轉型等。
 
-编辑器环境： Sublime Text 3
+## Sublime Text 3
 
 ### 安装 SublimeLinter
 SublimeLinter 是 SublimeText 的插件，它只是一个进行代码检查的框架，可以包括其他代码检查插件。
@@ -19,6 +19,7 @@ SublimeLinter 是 SublimeText 的插件，它只是一个进行代码检查的�
 ### 安装 nodeJS 和 jshint
 
 #### 安装 Node.js
+
 #### 通过 npm 安装 jshint
 ```
 npm install -g jshint
