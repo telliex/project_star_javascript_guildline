@@ -62,8 +62,4 @@ SublimeLinter的运行模式，总共有四种，分别如下：
 可在Tools->Sublime Linter->Lint Mode中进行设置
 可以在每次保存时显示错误提示窗口。通过Tools->Sublime Linter->Show Errors On Save设置
 错误标记样式(Mark Style)以及侧边栏主题(Gutter Theme)
-
-![errors](/images/error01.png)
-![errors](/images/error02.jpeg)
-
 黄色代表警告，红色代表错误。

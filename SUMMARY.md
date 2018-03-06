@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [JSHint](jshint.md)
-* [宣告](xuan-gao.md)
+* [宣告](naming.md.md)
 * [命名](chapter1.md)
 * [对象与数组](dui-xiang.md)
 * [字符串](zi-fu-chuan.md)
