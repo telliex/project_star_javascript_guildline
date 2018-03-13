@@ -15,6 +15,7 @@ npm i -g eslint
 ```
 eslint --init
 
+## 下面为问答设定
 How would you like to configure ESLint? Use a popular style guide
 Which style guide do you want to follow? Airbnb
 Do you use React? No
