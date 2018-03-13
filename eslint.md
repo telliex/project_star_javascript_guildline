@@ -11,10 +11,16 @@ avaScript 是一个动态的弱类型语言，在开发中比较容易出错。�
 npm i -g eslint
 ```
 
-#### Step2 建立设置文件,产出 .eslintre.js
+#### Step2 建立设置文件,产出 .eslintrc.js
 ```
 eslint --init
+
+How would you like to configure ESLint? Use a popular style guide
+Which style guide do you want to follow? Airbnb
+Do you use React? No
+What format do you want your config file to be in? JavaScript
 ```
+
 
 ## 配置文件相关
 
