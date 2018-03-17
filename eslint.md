@@ -34,7 +34,6 @@ package.json（在 package.json 里创建一个 eslintConfig 属性，在那里�
 
 ```
 ## 配置文件內容
-
 module.exports = {
     "extends": "airbnb-base"
 };
