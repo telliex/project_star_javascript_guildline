@@ -31,15 +31,12 @@ package.json（在 package.json 里创建一个 eslintConfig 属性，在那里�
 
 可配置 .eslintignore 文件告诉 ESLint 去忽略特定的文件和目录。
 
-
 ```
 ## 配置文件內容
 module.exports = {
     "extends": "airbnb-base"
 };
 ```
-
-
 
 ## vscode setting
 ```
@@ -58,6 +55,7 @@ module.exports = {
   "git.ignoreLimitWarning": true
 }
 ```
+
 
 
 
