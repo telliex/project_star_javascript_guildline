@@ -1,5 +1,8 @@
 # husky 及 lint-staged 接入指南
 
+良好的编码规范是保障项目质量和可维护性的重要因素，我们是通过 eslint 工具来检查代码的规范与否。为了防止那些不符合规范的代码已经进了代码仓库，我们需要在git的pre-commit阶段来检测你的代码。
+
+
 ## Step1:npm 包安装
 ```
 npm i -D eslint husky lint-staged
@@ -29,8 +32,14 @@ npm i -D eslint husky lint-staged
 ```
 {
   "scripts": {
-    "precommit": "lint-staged"
+-   "precommit": "lint-staged"
   },
++ "husky": {
++   "hooks": {
++     "precommit": "lint-staged"
++   }
++ }
+}
   "lint-staged": {
     "src/**/*.js": ["eslint --fix", "git add"]
   }
@@ -43,4 +52,6 @@ npm i -D eslint husky lint-staged
 2. lint-staged 利用配置的文件过滤路径，对暂存区文件一个个进行匹配，匹配成功时，运行 eslint –fix 并自动将修改添加到暂存区：
 3. 此时如果有报错，则流程终止，无法执行 commit 操作。
 
+- [lint-staged 文档](https://github.com/okonet/lint-staged)
+- [husky 文档](https://github.com/typicode/husky)
 
