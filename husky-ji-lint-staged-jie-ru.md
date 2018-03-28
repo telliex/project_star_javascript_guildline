@@ -52,6 +52,7 @@ npm i -D eslint husky lint-staged
 2. lint-staged 利用配置的文件过滤路径，对暂存区文件一个个进行匹配，匹配成功时，运行 eslint –fix 并自动将修改添加到暂存区：
 3. 此时如果有报错，则流程终止，无法执行 commit 操作。
 
+##  參考
 - [lint-staged 文档](https://github.com/okonet/lint-staged)
 - [husky 文档](https://github.com/typicode/husky)
 
