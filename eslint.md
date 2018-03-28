@@ -70,8 +70,10 @@ alert('foo');
 
 ```
 ## 文件顶部使用
+## 全部禁用
 /* eslint-disable */
-
+## 某項規則禁用
+/* eslint no-loop-func: 0 */
 alert('foo');
 ```
 
