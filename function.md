@@ -14,12 +14,7 @@ function myTestFunc(params){
 }
 ```
 
-
-### 5.4使用函数声明代替函数表达式
-
-### 5.5 不要在一个非函数代码块（if、while 等）中声明一个函数，把那个函数赋给一个变量。浏览器允许你这么做，但它们的解析表现不一致
-
-### 5.6 直接给函数的参数指定默认值，不要使用一个变化的函数参数
+### 5.4 直接给函数的参数指定默认值，不要使用一个变化的函数参数
 ```
 // really bad code
 function handleThings(opts) {
@@ -45,7 +40,7 @@ function handleThings(opts = {}) {
 }
 ```
 
-### 5.7 永远不要在一个非函数代码块（if、while 等）中声明一个函数，把那个函数赋给一个变量。浏览器允许你这么做，但它们的解析表现不一致
+### 5.5 永远不要在一个非函数代码块（if、while 等）中声明一个函数，把那个函数赋给一个变量。浏览器允许你这么做，但它们的解析表现不一致
 ```
 // bad code
 if (currentUser) {
@@ -63,7 +58,7 @@ if (currentUser) {
 }
 ```
 
-### 5.8 不要使用 arguments。可以选择 rest 语法 ... 替代
+### 5.6 不要使用 arguments。可以选择 rest 语法 ... 替代
 ```
 // bad code
 function concatenateAll() {
@@ -77,7 +72,7 @@ function concatenateAll(...args) {
 }
 ```
 
-### 5.9 使用函数声明代替函数表达式
+### 5.7 使用函数声明代替函数表达式
 ```
 // bad code
 const foo = function () {
@@ -88,7 +83,7 @@ function foo() {
 }
 ```
 
-### 5.10 当你必须使用函数表达式（或传递一个匿名函数）时，使用箭头函数符号
+### 5.8 当你必须使用函数表达式（或传递一个匿名函数）时，使用箭头函数符号
 ```
 // bad code
 [1, 2, 3].map(function (x) {
@@ -101,7 +96,7 @@ function foo() {
 });
 ```
 
-### 5.11 总是使用 class。避免直接操作 prototype 。因为 class 语法更为简洁更易读
+### 5.9 总是使用 class。避免直接操作 prototype 。因为 class 语法更为简洁更易读
 ```
 // bad code
 function Queue(contents = []) {
@@ -126,7 +121,7 @@ class Queue {
 }
 ```
 
-### 5.12 使用 extends 继承，extends 不会破坏 instanceof
+### 5.10 使用 extends 继承，extends 不会破坏 instanceof
 ```
 // bad code
 const inherits = require('inherits');
@@ -146,7 +141,7 @@ class PeekableQueue extends Queue {
 }
 ```
 
-### 5.13 禁止对顶级对象进行原型修改，必要时请以 addMethod 方法加入
+### 5.11 禁止对顶级对象进行原型修改，必要时请以 addMethod 方法加入
 ```
 // bad code
 Function.prototype.cutHtml = function(){};
