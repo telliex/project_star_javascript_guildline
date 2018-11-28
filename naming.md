@@ -28,12 +28,12 @@ function query() {
 
 ### 2.2 使用驼峰式命名对象、函数和实例
 ```
-// bad
+// bad code
 const OBJEcttsssss = {};
 const this_is_my_object = {};
 function c() {}
 
-// good
+// good code
 const thisIsMyObject = {};
 function thisIsMyFunction() {}
 ```
@@ -70,6 +70,7 @@ this.__firstName__ = 'Panda';
 
 // good code
 function _private(){};
+
 MyConstructor.prototype._private=_private;
 
 this._firstName = 'Panda';
@@ -125,7 +126,7 @@ const MAX_PEOPLE_SIZE = 10;
 
 ### 2.9 特殊命名规范
 
-1. 前面加 "is" 的变量名 应该 为布尔值，同理可以为 "has", "can" 或者 "should"。
+1. 前面加 **"is"** 的变量名 应该 为布尔值，同理可以为 "has", "can" 或者 "should"。
 2. 术语 "compute" 作为变量名应为已经计算完成的变量。
 3. 术语 "find" 作为变量名应为已经查找完成的变量。
 4. 术语 "initialize" 或者 "init" 作为变量名应为已经实例化（初始化）完成的类或者其他类型的变量。
