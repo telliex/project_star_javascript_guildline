@@ -6,7 +6,7 @@
 * [3.对象＆数组](object&array.md)
 * [4.字串](string.md)
 * [5.函数](function.md)
-* [6.模块](moudle.md)
+* [6.模块](module.md)
 * [7.代码](coding.md)
 * [8.注释](annotation.md)
 * [9.除错](debug.md)
